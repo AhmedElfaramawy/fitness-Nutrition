@@ -30,10 +30,10 @@
             background-image: url('https://img.freepik.com/premium-photo/abstract-white-lines-background-minimal-dynamic-shape-3d-rendering_224530-2088.jpg?w=1800');
             background-size: 100% 100%;
             background-attachment: fixed;
+            background-attachment: local;
         }
 
         section {
-            background-color: azure;
             width: 100%;
             font-style: oblique;
         }
@@ -50,18 +50,13 @@
 
         .box {
             display: flex;
-            flex-direction: row;
-            height: 500px;
-            width: 50%;
+            width: 100%;
+            justify-content: right;
         }
 
         .box1 {
             display: flex;
             flex-direction: row;
-        }
-
-        .box2 {
-            width: 50%;
         }
 
         .imgstyle {
@@ -77,6 +72,10 @@
         a {
             display: block;
         }
+        nav{
+            width: 30%;
+            
+        }
     </style>
 
 
@@ -91,7 +90,7 @@
     <section>
 
         <h2> D.Ahmed Mohamed </h2>
-        <img src="https://scontent.fcai19-8.fna.fbcdn.net/v/t39.30808-6/300948797_591928775772860_7671784813495922491_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Bk1VkRWwhawAX8ksYK6&_nc_ht=scontent.fcai19-8.fna&oh=00_AT_ffREvkOeZtDOoXsTkiQ-zeiZ-Nrnst3QOhdDLkfuf0w&oe=630B029E"
+        <img src="backgroundimage.jpeg"
             class="imgstyle">
 
     </section>
@@ -122,31 +121,31 @@
 
     </main>
 
-    <section style="display: flex;">
-        
-        <div class="box">
-            <img src="a1.jpeg">
-            <img src="a2.jpeg">
-        </div> 
-        <div class="box2">
+    <div class="box">    
+        <section style="width: 50%;">
+            
+            <img src="a1.jpeg" style="height: 400px;">
+            <img src="a2.jpeg" style="height: 400px;">
+                    
+        </section>
+        <nav>
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" style="height: 100px;">                      
+            
+            <br>
+            <h2> 01206746917 </h2>
+
+            <a href="https://www.facebook.com/profile.php?id=100048672273478">                    
+                <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-facebook-icon-png-image_3566127.png" style="height: 100px;">
+            </a>
                 
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" style="height: 200px;">                      
-                <br>
-                01206746917
+        </nav>
 
-                <a href="https://www.facebook.com/profile.php?id=100048672273478">                    
-                    <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-facebook-icon-png-image_3566127.png" style="height: 200px;">
-                </a>
-           
-        </div>
-    </section>
-
-
+    </div>    
     <footer class="box1">
 
         <h3 style="color: black;">coach Ahmed mohamed </h3>
-        <p style="color: lightblue; 
-        width: 70%;">phone numbers 01065314252 - 01206746917</p>
+        <p style="color: lightblue;">phone numbers 01065314252 - 01206746917</p>
 
     </footer>
 </body>
